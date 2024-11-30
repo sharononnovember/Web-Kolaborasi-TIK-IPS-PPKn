@@ -1,0 +1,65 @@
+body {
+    background: rgb(255,241,80);
+background: radial-gradient(circle, rgba(255,241,80,1) 0%, rgba(255,115,0,1) 100%);
+}
+
+/* header */
+.header {
+    width: 1280px;
+    position: relative;
+    margin: 0px auto;
+}
+
+/* Navigation Bar */
+ul {
+    list-style: none;
+    background: rgb(177, 255, 247);
+    border: 2px solid brown;
+    margin: 0x auto; 
+    position: relative; /* Ensure it follows document flow */
+    width: 1280px;
+    height: 60px;
+    text-align: left; /* Center align text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    height: 60px;
+    padding: 10px 8px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: brown;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color changes */
+}
+
+ul a:hover{
+    background-color: lightyellow;
+}
+
+/* kode css dropdown */
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    background: pink;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
